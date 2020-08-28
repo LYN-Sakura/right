@@ -43,8 +43,8 @@ export default {
   data() {
     return {
       user: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '123456'
       },
       login_rules: {
         username: [
@@ -71,7 +71,8 @@ export default {
               message: '登录成功',
               type: 'success'
             });
-            window.localStorage.setItem('token', res.data.token);
+            window.sessionStorage.setItem('token', res.data.token);
+            this.$router.push('/home')
           }
         }
       });

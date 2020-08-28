@@ -6,7 +6,12 @@ import {
   Form,
   FormItem,
   Input,
-  Message
+  Message,
+  Container,
+  Header,
+  Aside,
+  Main,
+  Footer
 } from 'element-ui';
 
 Vue.use(Button)
@@ -15,5 +20,10 @@ Vue.use(Card)
 Vue.use(Form);
 Vue.use(FormItem);
 Vue.use(Input);
+Vue.use(Container);
+Vue.use(Header);
+Vue.use(Aside);
+Vue.use(Main);
+Vue.use(Footer);
 
 Vue.prototype.$message = Message;
